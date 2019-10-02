@@ -22,20 +22,21 @@ Ref :
     <link rel="icon" type="image/png" sizes="48x48" 
           href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
 
-    <link rel="stylesheet" href="css/pixels-and-moar/pixels-main.css">
+    <link rel="stylesheet" href="css/c2-pixels-and-moar/pixels-main.css">
     <link rel="stylesheet" media="screen and (max-width: 800px)" 
-          href="css/pixels-and-moar/pixels-800px.css">
+          href="css/c2-pixels-and-moar/pixels-800px.css">
     <link rel="stylesheet" media="screen and (min-width: 800px) and (max-width: 1280px)" 
-          href="css/pixels-and-moar/pixels-1280px.css">
+          href="css/c2-pixels-and-moar/pixels-1280px.css">
     <link rel="stylesheet" media="screen and (min-width: 1280px) and (max-width: 1600px)" 
-          href="css/pixels-and-moar/pixels-1600px.css">
+          href="css/c2-pixels-and-moar/pixels-1600px.css">
     <link rel="stylesheet" media="screen and (min-width: 1600px)" 
-          href="css/pixels-and-moar/pixels-1600px-max.css">
+          href="css/c2-pixels-and-moar/pixels-1600px-max.css">
   </head>
   <body>
 
     <header class="top-header">
-      <h1 class="title-center">Hardware Pixels</h1>
+      <h1 class="title-center">Hardware Pixels
+      </h1>
     </header>
 
     <main>
@@ -58,9 +59,20 @@ Ref :
 
       <section class="box-font-boosting">
         <h1 class="title__font-boosting">
+          Nexus 5 
+        </h1>
+        <p class="paragraph__font-boosting">
+          1080px Hardware pixels device / pixel ratio 3 = 360 dips
+        </p>
+      </section>
+
+      <section class="box-font-boosting">
+        <h1 class="title__font-boosting">
           With font-boosting for title to use 32px
         </h1>
-        <p class="paragraph__font-boosting">With font-boosting for paragraph to use 26px</p>
+        <p class="paragraph__font-boosting">With font-boosting for paragraph to use 26px
+          <span id="screen"></span>
+        </p>
       </section>
 
     </main>
@@ -68,6 +80,14 @@ Ref :
   </body>
 
   <script>
+
+    var txt = "";
+    txt += "<p>Total width/height: " + screen.width + "*" + screen.height + "</p>";
+    txt += "<p>Available width/height: " + screen.availWidth + "*" + screen.availHeight + "</p>";
+    txt += "<p>Color resolution: " + screen.pixelDepth + "</p>";
+    txt += "<p>Color depth: " + screen.colorDepth + "</p>";
+
+    document.getElementById('screen').innerHTML = txt;
 
   </script>
 </html>

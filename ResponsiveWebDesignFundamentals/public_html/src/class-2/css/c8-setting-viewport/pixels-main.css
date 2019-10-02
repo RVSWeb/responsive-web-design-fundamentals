@@ -25,17 +25,17 @@ body{
 }
 
 .box-font-boosting{
-  width: 100%;
+  width: 80%;
   height: auto;
   padding: 1%;
-  margin: 0 auto;
+  margin: 2% auto;
   border: 1px solid red;
   background-color: #3c3d47;
   color: #fff;
 }
 
 .title__font-boosting{
-  width: 100%;
+  width: 80%;
   height: auto;
   margin: 2% auto;
   text-align: center;
@@ -43,7 +43,10 @@ body{
 }
 
 .paragraph__font-boosting{
-  margin: 0 auto;
+  width: 80%;
+  margin: 1% auto;
+  padding: 1%;
   height: auto;
+  text-align: center;
   font-size: 26px;
 }

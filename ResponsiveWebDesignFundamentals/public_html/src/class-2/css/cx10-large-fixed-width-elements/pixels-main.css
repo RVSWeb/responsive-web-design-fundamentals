@@ -1,0 +1,58 @@
+/* 
+    Created on : 02-oct-2019, 9:31:30
+    Author     : RVS
+*/
+
+body{
+  background-color: #f9d5bb;
+}
+
+.top-header{
+  width: 50%;
+  padding: 0.5%;
+  margin: 1% auto;
+  background-color: #d35656;
+  border-radius: 7px;
+}
+
+.title-center{
+  width: 55%;
+  padding: 2%;
+  margin: 1% auto;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Roboto',sans-serif;
+  background-color: #f9d5bb;
+  border-radius: 7px;
+}
+
+.box-font-boosting{
+  width: 80%;
+  height: auto;
+  padding: 1%;
+  margin: 2% auto;
+  color: #fff;
+  background-color: #3c3d47;
+  border-radius: 7px;
+}
+
+.title__font-boosting{
+  width: 60%;
+  height: auto;
+  margin: 1% auto;
+  text-align: center;
+  font-size: 32px;
+}
+
+.paragraph__font-boosting{
+  width: 80%;
+  margin: 1% auto;
+  height: auto;
+  text-align: center;
+  font-size: 26px;
+}
+
+.imagen-width{
+  width: 100%;
+  max-width: 1280px;
+}

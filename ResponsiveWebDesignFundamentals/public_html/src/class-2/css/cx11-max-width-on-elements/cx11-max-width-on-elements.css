@@ -1,0 +1,62 @@
+/* 
+    Created on : 02-oct-2019, 13:33:27
+    Author     : RVS
+*/
+
+.box-main{
+  width: 40%;
+  border: 5px solid #182147;
+}
+
+.title-css{
+  font-family: 'Roboto',sans-serif;
+  color: #182147;
+  font-size: 4em;
+  background-color: #f9d5bb;
+}
+
+.img-css{
+  max-width: 100%;
+  height: auto;
+}
+
+.txt-deco{
+  width: 50%;
+  margin: 2% auto;
+  font-size: 1.5em;
+  font-family: 'Roboto',sans-serif;
+}
+
+.pre-txt-deco{
+  width: 30%;
+  padding: 1%;
+  margin: 1% auto;
+  font-size: 1.5em;
+  font-family: 'Roboto',sans-serif;
+  background-color: #ccc;
+}
+
+.owl {
+  width: 100%;
+}
+
+.img-owl{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.img-owl--ajust {
+  display: block;
+  margin: 0 auto;
+  width: 640px;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.img-owl--legend {
+  width: 50%;
+  margin: 2% auto;
+  text-align: center;
+  font-family: 'Roboto',sans-serif;
+  font-size: 2em;
+}
