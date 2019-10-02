@@ -23,3 +23,27 @@ body{
   font-family: 'Roboto',sans-serif;
   background-color: #f9d5bb;
 }
+
+.box-font-boosting{
+  width: 100%;
+  height: auto;
+  padding: 1%;
+  margin: 0 auto;
+  border: 1px solid red;
+  background-color: #3c3d47;
+  color: #fff;
+}
+
+.title__font-boosting{
+  width: 100%;
+  height: auto;
+  margin: 2% auto;
+  text-align: center;
+  font-size: 32px;
+}
+
+.paragraph__font-boosting{
+  margin: 0 auto;
+  height: auto;
+  font-size: 26px;
+}

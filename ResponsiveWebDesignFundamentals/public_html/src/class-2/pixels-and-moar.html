@@ -25,7 +25,9 @@ Ref :
     <link rel="stylesheet" href="css/pixels-and-moar/pixels-main.css">
     <link rel="stylesheet" media="screen and (max-width: 800px)" 
           href="css/pixels-and-moar/pixels-800px.css">
-    <link rel="stylesheet" media="screen and (max-width: 1600px) and (min-width: 800px)" 
+    <link rel="stylesheet" media="screen and (min-width: 800px) and (max-width: 1280px)" 
+          href="css/pixels-and-moar/pixels-1280px.css">
+    <link rel="stylesheet" media="screen and (min-width: 1280px) and (max-width: 1600px)" 
           href="css/pixels-and-moar/pixels-1600px.css">
     <link rel="stylesheet" media="screen and (min-width: 1600px)" 
           href="css/pixels-and-moar/pixels-1600px-max.css">
@@ -38,12 +40,29 @@ Ref :
 
     <main>
       <section class="box-800px">
-        <p class="paragraph-800px">800px</p>
+        <p class="paragraph-800px"> DIP : 800px</p>
       </section>
 
       <section class="box-1600px">
-        <p class="paragraph-1600px">1600px</p>
+        <p class="paragraph-1600px">DIP : 1600px</p>
       </section>
+
+      <section class="box-1280px">
+        <p class="paragraph-1280px">
+          Browser 1280px - Device Independent Pixels
+        </p>
+        <p class="paragraph-1280px">
+          Browser 2560 DIPs - Hardware Pixels
+        </p>
+      </section>
+
+      <section class="box-font-boosting">
+        <h1 class="title__font-boosting">
+          With font-boosting for title to use 32px
+        </h1>
+        <p class="paragraph__font-boosting">With font-boosting for paragraph to use 26px</p>
+      </section>
+
     </main>
 
   </body>

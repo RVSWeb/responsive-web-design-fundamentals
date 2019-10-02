@@ -11,7 +11,7 @@ body{
   width: 100%;
 }
 
-.box-800px {
+.box-800px , .box-1280px , .paragraph-800px , .paragraph-1280px{
   display: none;
 }
 

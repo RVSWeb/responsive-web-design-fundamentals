@@ -3,25 +3,13 @@
     Author     : RVS
 */
 
-body{
-  background-color: #f66767;
-}
-
-.top-header{
-  width: 100%;
-}
-
-.box-800px , .box-1280px , .paragraph-800px , .paragraph-1280px{
-  display: none;
-}
-
-.box-1600px{
+.box-1280px {
   width: 50%;
   margin: 1% auto;
 }
 
-.paragraph-1600px{
-  width: 30%;
+.paragraph-1280px {
+  width: 70%;
   padding: 1%;
   margin: 1% auto;
   text-align: center;
@@ -29,4 +17,9 @@ body{
   font-size: 2em;
   font-family: 'Roboto' , sans-serif;
   background-color: #3c3d47;
+}
+
+.box-800px , 
+.box-1600px{
+  display: none;
 }

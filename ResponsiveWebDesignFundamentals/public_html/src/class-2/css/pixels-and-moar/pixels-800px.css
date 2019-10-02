@@ -37,7 +37,7 @@ body{
   background-color: #3c3d47;
 }
 
-.box-1600px{
+.box-1600px , .box-1280px{
   display: none;
 }
 
@@ -54,5 +54,4 @@ body{
     font-family: 'Roboto' , sans-serif;
     background-color: #3c3d47;
   }
-
 }
