@@ -1,0 +1,28 @@
+/* 
+    Created on : 01-oct-2019, 23:50:22
+    Author     : RVS
+*/
+
+body{
+  background-color: #f66767;
+}
+
+.box-800px {
+  display: none;
+}
+
+.box-1600px{
+  width: 100%;
+  margin: 1% auto;
+}
+
+.paragraph-1600px{
+  width: 30%;
+  padding: 1%;
+  margin: 1% auto;
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Roboto' , sans-serif;
+  background-color: #3c3d47;
+}
