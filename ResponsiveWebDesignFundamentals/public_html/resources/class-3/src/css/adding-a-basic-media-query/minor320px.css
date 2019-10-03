@@ -1,0 +1,55 @@
+/* 
+    Created on : 03-oct-2019, 12:38:34
+    Author     : RVS
+*/
+
+@media screen and (max-width: 320px) and (min-width: 200px) {
+
+  header{
+    width: 100%;
+    margin: 1% auto;
+    padding: 1%;
+  }
+
+  .header__title {
+    text-align: center;
+    color: #fff;
+    font-size: 1.0em;
+    background-color: #393e46;
+    border-radius: 6px;
+  }
+
+  main{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1%;
+  }
+
+  .main--deco {
+    background-color: #ccc;
+  }
+
+  section{
+    width: 50%;
+  }
+
+  .box--first , 
+  .box--second , 
+  .box--thirst {
+    background-color: red;
+  }
+
+  .section__title{
+
+  }
+
+  .section__txt{
+
+  }
+
+  .pre__deco{
+
+  }
+}
+

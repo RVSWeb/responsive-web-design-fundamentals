@@ -1,0 +1,73 @@
+/* 
+    Created on : 03-oct-2019, 13:04:54
+    Author     : RVS
+*/
+
+header{
+  width: 40%;
+  height: auto;
+  margin: 1% auto;
+  padding: 1%;
+}
+
+.header__title {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5%;
+  text-align: center;
+  color: #fff;
+  font-family: Roboto,sans-serif;
+  background-color: #393e46;
+  border-radius: 6px;
+}
+
+main{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.main--deco {
+  background-color: #ccc;
+}
+
+section{
+  width: 50%;
+}
+
+.box--first , 
+.box--second , 
+.box--thirst {
+  display: block;
+  width: 100%;
+}
+
+.section__title{
+
+}
+
+.section__txt{
+  display: block;
+  width: 40%;
+  padding: 1%;
+  margin: 1% auto;
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Turret Road', cursive;
+  text-align: center;
+  background-color: #393e46;
+  border-radius: 7px;
+}
+
+.pre__deco{
+  display: block;
+  width: 80%;
+  font-size: 1em;
+  text-align: left;
+  background-color: #00adb5;
+}
+
+.deco--red{
+  color: #a10;
+}
