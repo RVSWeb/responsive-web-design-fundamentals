@@ -22,13 +22,13 @@ Ref :
     <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
     <style>
 
-      header{
+      header {
         width: 80%;
         height: auto;
         margin: 1% auto;
       }
 
-      div{
+      div {
         width: 70%;
         height: auto;
         padding: 0.5%;
@@ -59,10 +59,6 @@ Ref :
         background-color: #666666;
       }
 
-      span{
-        font-weight: bolder;
-      }
-
       .button-48px {
         display: block;
         width: 48px;
@@ -78,7 +74,7 @@ Ref :
         border: none;
       }
 
-      .anchor-basic{
+      .anchor-basic {
         display: block;
         width: 48px;
         height: 48px;
@@ -93,6 +89,18 @@ Ref :
         text-decoration: none;
       }
 
+      .anchor-basic-padding {
+        display: block;
+        width: 48px;
+        height: auto;
+        padding: 1.5em;
+        margin: 1% 0 0 3%;
+        text-align: center;
+        color: #000;
+        background-color: #ccc;
+        text-decoration: none;
+      }
+
     </style>
   </head>
   <body>
@@ -100,17 +108,18 @@ Ref :
     <section>
       <div>
         <p class="paragraph">
-          Crear botones y enlaces del tamaño <span>48px</span>
-          para que se ajusten mejor al dedo
+          Crear botones y enlaces del tamaño <b>48px</b>
+          para que se ajusten mejor al dedo agregando un padding de <b>1.5em</b>
         </p>
       </div>
     </section>
 
     <section>
-      <p class="paragraph--medium">Button 48px</p>
+      <p class="paragraph--medium">Button 48px - 1.5em</p>
       <button class="button-48px" type="button">48px</button>
-      <p class="paragraph--medium">Anchor 48px</p>
+      <p class="paragraph--medium">Anchor 48px - 1.5em</p>
       <a class="anchor-basic" href="#">48px</a>
+      <a class="anchor-basic-padding" href="#">48px</a>
     </section>
 
   </body>
