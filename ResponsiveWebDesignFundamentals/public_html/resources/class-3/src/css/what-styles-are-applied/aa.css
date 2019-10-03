@@ -1,0 +1,11 @@
+/* 
+    Created on : 03-oct-2019, 23:47:18
+    Author     : RVS
+*/
+
+@media screen and (min-width: 0px) and (max-width: 400px){
+
+  body{
+    background-color: #f00;
+  }
+}

@@ -38,13 +38,15 @@ section{
 
 .box--first , 
 .box--second , 
-.box--thirst {
+.box--thirst ,
+.box--fourth ,
+.box--fifth {
   display: block;
   width: 100%;
 }
 
 .section__title{
-
+  width: 100%;
 }
 
 .section__txt{

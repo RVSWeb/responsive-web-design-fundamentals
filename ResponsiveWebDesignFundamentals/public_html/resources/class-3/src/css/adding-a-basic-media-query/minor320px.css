@@ -6,15 +6,21 @@
 @media screen and (max-width: 320px) and (min-width: 200px) {
 
   header{
-    width: 100%;
+    width: 50%;
+    height: auto;
     margin: 1% auto;
     padding: 1%;
   }
 
   .header__title {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5%;
     text-align: center;
     color: #fff;
-    font-size: 1.0em;
+    font-size: 1.2em;
+    font-family: Roboto,sans-serif;
     background-color: #393e46;
     border-radius: 6px;
   }
@@ -37,7 +43,8 @@
   .box--first , 
   .box--second , 
   .box--thirst {
-    background-color: red;
+    display: block;
+    width: 100%;
   }
 
   .section__title{
@@ -45,11 +52,47 @@
   }
 
   .section__txt{
-
+    display: block;
+    width: 40%;
+    padding: 1%;
+    margin: 1% auto;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Turret Road', cursive;
+    text-align: center;
+    background-color: #393e46;
+    border-radius: 7px;
   }
 
   .pre__deco{
+    display: block;
+    width: 100%;
+    font-size: 0.5em;
+    text-align: left;
+    background-color: #00adb5;
+  }
 
+  .deco--red{
+    color: #a10;
+  }
+
+  .section__paragraph {
+    display: block;
+    width: 90%;
+    margin: 5% auto;
+    padding: 5%;
+    height: auto;
+    background-color: #eeeeee;
+  }
+
+  .paragraph--deco {
+    font-family: Roboto,sans-serif;
+  }
+
+  .span--deco{
+    text-align: center;
+    color: #a10;
+    font-size: 1.5em;
   }
 }
 
