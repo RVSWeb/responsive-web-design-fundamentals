@@ -12,6 +12,7 @@
   margin: 0 auto;
 }
 
+/* Todos los hijos 'div' de la clase .wrapper */
 .wrapper > div{
   border: 2px solid rgb(233,171,88);
   border-radius: 5px;
