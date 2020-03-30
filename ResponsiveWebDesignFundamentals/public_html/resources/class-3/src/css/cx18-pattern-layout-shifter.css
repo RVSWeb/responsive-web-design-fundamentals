@@ -1,0 +1,60 @@
+* {
+  background: #000; }
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 6px; }
+
+.box {
+  width: 100%;
+  height: auto;
+  min-height: 150px; }
+
+.dark_blue {
+  background-color: #2A457A; }
+
+.light_blue {
+  background-color: #099DD9; }
+
+.green {
+  background-color: #0C8542; }
+
+.lime {
+  background-color: #b3d234; }
+
+.seafoam {
+  background-color: #4dbea1; }
+
+.red {
+  background-color: #EC1D3B; }
+
+.orange {
+  background-color: #F79420; }
+
+@media screen and (min-width: 320px) {
+  .light_blue {
+    min-height: 220px; }
+
+  .green {
+    min-height: 220px; } }
+@media screen and (min-width: 500px) {
+  .dark_blue {
+    width: 50%; }
+
+  #container2 {
+    width: 50%; } }
+@media screen and (min-width: 600px) {
+  .dark_blue {
+    width: 25%;
+    order: 1; }
+
+  #container2 {
+    width: 50%; }
+
+  .red {
+    width: 25%;
+    order: -1; } }
+
+/*# sourceMappingURL=cx18-pattern-layout-shifter.css.map */

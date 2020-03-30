@@ -2,6 +2,11 @@
     Created on : 03-oct-2019, 13:04:54
     Author     : RVS
 */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 header{
   width: 40%;
@@ -47,9 +52,6 @@ section{
 
 .section__title{
   width: 100%;
-}
-
-.section__txt{
   display: block;
   width: 40%;
   padding: 1%;

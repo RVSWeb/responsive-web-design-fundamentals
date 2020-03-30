@@ -1,0 +1,58 @@
+
+html,body{
+    width: 100%;
+}
+
+nav{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    // -webkit-transform: translate(-300px,0);
+    transition: transform 0.3s ease;
+}
+
+nav.open {
+    -webkit-transform: translate(0,0);
+    transform: translate(0, 0);
+}
+
+// .dark_blue {
+//     order: 0;
+//     width: 50%;
+//     background-color: #2A457A;
+// }
+
+// .light_blue {
+//     order: 1;
+//     width: 50%;
+//     background-color: #099DD9;
+// }
+
+/*
+* Realiza cambios cuando ventana sea mayor de 600px
+*/
+@media screen and (min-width: 600px){
+
+    nav{
+        position: relative;
+        // elimina la transición de elementos
+        transform: translate(0 , 0);
+    }
+
+    body {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    main{
+        width: auto;
+        // ocupa todo el ancho de la ventana del navegador
+        flex-grow: 1;
+    }
+        main {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+}
+
+

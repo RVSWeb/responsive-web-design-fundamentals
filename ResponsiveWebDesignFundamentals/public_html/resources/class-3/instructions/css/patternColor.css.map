@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,UAAW;EACT,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,OAAO;;AAGhB,WAAY;EACV,gBAAgB,EAAE,OAAO;;AAG3B,MAAO;EACL,gBAAgB,EAAE,OAAO;;AAG3B,KAAM;EACJ,gBAAgB,EAAE,OAAiB;;AAGrC,QAAS;EACP,gBAAgB,EAAE,OAAiB;;AAGrC,IAAK;EACH,gBAAgB,EAAE,OAAO;;AAG3B,OAAQ;EACN,gBAAgB,EAAE,OAAO",
+"sources": ["../sass/patternColor.scss"],
+"names": [],
+"file": "patternColor.css"
+}

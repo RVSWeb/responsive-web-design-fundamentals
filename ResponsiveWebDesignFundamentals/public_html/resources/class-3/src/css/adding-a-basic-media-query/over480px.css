@@ -1,0 +1,103 @@
+/* 
+    Created on : 03-oct-2019, 10:50:43
+    Author     : RVS
+*/
+
+@media screen and (min-width: 321px) and (max-width: 480px){
+
+  body{
+    background-color: #eeeeee;
+  }
+
+  .header__title{
+    margin: 10px auto;
+    width: 200px;
+    height: auto;
+    text-align: center;
+  }
+
+  .main--deco{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  pre{
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    background-color: #00adb5;
+  }
+
+  .pre__deco{
+    width: 95%;
+    font-size: .9em;
+    text-align: left;
+    background-color: #00adb5;
+  }
+
+  .section__title{
+    width: 40%;
+    padding: 10px;
+    margin: 10px auto;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Turret Road', cursive;
+    text-align: center;
+    background-color: #393e46;
+    border-radius: 7px;
+  }
+
+  .section__paragraph {
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    height: auto;
+    background-color: #eeeeee;
+  }
+
+  .paragraph--deco {
+    font-family: Roboto,sans-serif;
+  }
+
+  .span--deco{
+    text-align: center;
+    color: #a10;
+    font-size: 1.5em;
+  }
+
+}
+
+@media screen and (min-width: 480px){
+
+  .section__title{
+    width: 40%;
+    padding: 10px;
+    margin: 10px auto;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Turret Road', cursive;
+    text-align: center;
+    background-color: #393e46;
+    border-radius: 7px;
+  }
+
+  .section__paragraph {
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    height: auto;
+    background-color: #eeeeee;
+  }
+
+  .paragraph--deco {
+    font-family: Roboto,sans-serif;
+  }
+
+  .span--deco{
+    text-align: center;
+    color: #a10;
+    font-size: 1.5em;
+  }
+
+}

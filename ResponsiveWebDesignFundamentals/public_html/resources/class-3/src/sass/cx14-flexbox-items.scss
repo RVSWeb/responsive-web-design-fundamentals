@@ -1,0 +1,26 @@
+@import "style-basic.scss";
+
+.dark_blue{
+    background-color: rgb(47, 47, 228);
+    order: 4;
+}
+
+.light_blue{
+    background-color: rgb(58, 135, 211);
+    order: 5;
+}
+
+.green{
+    background-color: rgb(50, 226, 118);
+    order: 2;
+}
+
+.orange{
+    background-color: rgb(235, 145, 28);
+    order: 3;
+}
+
+.red{
+    background-color: rgb(221, 62, 50);
+    order: 1;
+}

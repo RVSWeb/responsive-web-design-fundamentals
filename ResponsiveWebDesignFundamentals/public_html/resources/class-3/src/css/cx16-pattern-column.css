@@ -1,0 +1,22 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.title {
+  font-size: 2.5em;
+  text-align: center; }
+
+.box {
+  width: 100%;
+  height: auto;
+  text-align: center; }
+
+.light_blue {
+  background-color: #3a87d3; }
+
+.dark_blue {
+  background-color: #2f2fe4; }
+
+.green {
+  background-color: #32e276; }
+
+/*# sourceMappingURL=cx16-pattern-column.css.map */

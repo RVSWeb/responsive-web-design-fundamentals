@@ -1,0 +1,66 @@
+
+/**
+* Divs por encima de 450px
+*/
+@media screen and (max-width: 449px){
+ 
+    .container{
+        border: 5px dashed rgb(0, 255, 76);
+    }
+    
+}
+
+@media screen and (min-width: 450px){
+ 
+    .container{
+        border: 5px dashed #f00;
+    }
+    
+    .dark_blue{
+        width: 25%;
+    }
+
+    .light_blue{
+        width: 75%;
+    }
+}
+
+/**
+* Todo los elementos por encima de 550px
+*/
+@media screen and (min-width: 550px){
+
+    .container{
+        border: 5px dashed #ff0;
+    }
+    
+    .dark_blue{
+        width: 25%;
+    }
+    
+    .light_blue{
+        width: 75%;
+    }
+    
+    .green {
+        width: 25%;
+    }
+}
+
+/* 
+* Todo los elementos por encima de 700px
+* we are just adding margin auto 
+* to expand margin but keep 
+* the content box at constant 700 px.
+*/
+@media screen and (min-width: 700px){
+ 
+    .container{
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px dashed #fff;
+        border-radius: 6px;
+    }
+}
+

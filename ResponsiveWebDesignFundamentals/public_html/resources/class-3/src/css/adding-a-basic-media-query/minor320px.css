@@ -3,7 +3,7 @@
     Author     : RVS
 */
 
-@media screen and (max-width: 320px) and (min-width: 200px) {
+@media screen and (min-width: 200px) and (max-width: 320px){
 
   header{
     width: 50%;
@@ -48,10 +48,6 @@
   }
 
   .section__title{
-
-  }
-
-  .section__txt{
     display: block;
     width: 40%;
     padding: 1%;
@@ -94,5 +90,6 @@
     color: #a10;
     font-size: 1.5em;
   }
+  
 }
 

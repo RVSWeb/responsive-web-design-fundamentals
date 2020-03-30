@@ -1,101 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
 <!-- 
 Created on : 03-oct-2019 10:46:31 
 User : Raul Vela 
-Ref :
---> 
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <title>Adding a basic media query</title>
-    <!--Parte tecnica que recibe el servidor-->
-    <meta charset="utf-8">
-    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
-    <meta name="description" content="Adding a basic media query">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#4285f4">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+-->
+<head>
+  <title>Adding a basic media query</title>
+  <!--Parte tecnica que recibe el servidor-->
+  <meta charset="utf-8">
+  <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+  <meta name="description" content="Adding a basic media query">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4285f4">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  <link rel="icon" type="image/png" sizes="48x48"
+    href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+  <link rel="stylesheet" type="text/css" href="src/css/adding-a-basic-media-query/basic-media-main-style.css">
+  <link rel="stylesheet" type="text/css" href="src/css/adding-a-basic-media-query/minor320px.css">
+  <link rel="stylesheet" media="screen and (min-width:321px)" href="src/css/adding-a-basic-media-query/over480px.css">
+</head>
 
-    <!--<link rel="manifest" href="/site.webmanifest">-->
-    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
-    <link rel="stylesheet" type="text/css" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
-    <link rel="stylesheet" type="text/css" href="src/css/adding-a-basic-media-query/basic-media-main-style.css">
-    <link rel="stylesheet" type="text/css" href="src/css/adding-a-basic-media-query/minor320px.css">
-    <link rel="stylesheet" media="screen and (min-width:500px)" 
-          href="src/css/adding-a-basic-media-query/over500px.css">
-    <style>
-      /*      
-      Todas las propiedades que se agreguen aquí predominaran sobre el resto de 
-      propiedades de las medias queries si los archivos con las media queries van antes 
-      que las etiquetas <style> 
-      */
-    </style>
-  </head>
-  <body>
+<body>
 
-    <header>
-      <h1 class="header__title">Tipos de etiquetas medias queries</h1>
-    </header>
+  <header>
+    <h1 class="header__title">
+      Tipos de etiquetas medias queries
+    </h1>
+  </header>
+  
+  <main class="main--deco">
+    <section class="box--first">
+      <h3 class="section__title">Permitido</h3>
+      <pre class="pre__deco">
+&lt;link rel="stylesheet" 
+  media="screen and (min-width:500px)" 
+  href="path/archive.css"&gt;
+      </pre>
+    </section>
 
-    <main class="main--deco">
-      <section class="box--first">
-        <h3 class='section__title'>
-          <pre class="pre__deco">
-&lt;link rel="stylesheet" media="screen and (min-width:500px)" 
-         href="path/archive.css"&gt;
-          </pre>
-        </h3>
-      </section>
-
-      <section class="box--second">
-        <h3 class="section__title">
-          <pre class="pre__deco">
+    <section class="box--second">
+      <h3 class="section__title">Permitido</h3>
+      <pre class="pre__deco">
 @media screen and (min-width:500px) {
-
-       body { 
-              background-color: green; 
-            }
+  body { 
+    background-color: green; 
     }
-          </pre>
-        </h3>
-      </section>
+  }
+      </pre>
+    </section>
 
-      <section class="box--thirst">
-        <h3 class="section__title">
-          <span class="section__txt">NEVER USER</span>
-          <pre class="pre__deco deco--red">
- @import url('no.css') only screen and (min-width: 500p);
-          </pre>
-        </h3>
-      </section>
+    <section class="box--thirst">
+      <h3 class="section__title">NEVER USER</h3>
+      <pre class="pre__deco deco--red">
+@import url('no.css') 
+ only screen and (min-width: 500p);
+      </pre>
+    </section>
 
-      <section class="box--fourth">
-        <h3 class="section__title">
-          <span class="section__txt">What do you must choose ?</span>
-          <p class="section__paragraph paragraph--deco">
-            If you choose Linked CSS , you have many small 
-            <span class="span--deco">HTTP REQUEST</span> 
-          </p>
-        </h3>
-      </section>
+    <section class="box--fourth">
+      <h3 class="section__title">
+        What do you must choose ?</h3>
+      <p class="section__paragraph paragraph--deco">
+        If you choose Linked CSS , you have many small
+        <span class="span--deco">HTTP REQUEST</span>
+      </p>
+    </section>
 
-      <section class="box--fifth">
-        <h3 class="section__title">
-          <p class="section__paragraph paragraph--deco">
-            If you choose &#64;media , you have few big
-            <span class="span--deco">HTTP REQUEST</span> 
-            but tend to be a little bit bigger
-          </p>
-        </h3>
-      </section>
+    <section class="box--fifth">
+      <h3 class="section__title">
+        If you choose &#64;media , you have few big</h3>
+      <p class="section__paragraph paragraph--deco">
+        <span class="span--deco">HTTP REQUEST</span>
+        but tend to be a little bit bigger
+      </p>
+    </section>
+  </main>
 
-    </main>
-
-
-
-  </body>
+</body>
 </html>

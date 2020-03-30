@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+
+.box {
+  width: 150px;
+  height: 150px; }
+
+.dark_blue {
+  background-color: #2f2fe4;
+  order: 4; }
+
+.light_blue {
+  background-color: #3a87d3;
+  order: 5; }
+
+.green {
+  background-color: #32e276;
+  order: 2; }
+
+.orange {
+  background-color: #eb911c;
+  order: 3; }
+
+.red {
+  background-color: #dd3e32;
+  order: 1; }
+
+/*# sourceMappingURL=cx14-flexbox-items.css.map */
