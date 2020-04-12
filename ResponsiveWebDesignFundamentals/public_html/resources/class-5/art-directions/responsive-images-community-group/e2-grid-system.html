@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e2-grid-system</title>
+    <link rel="stylesheet" type="text/css" href="css/e2-grid-system.css">
+</head>
+
+<body>
+
+    <p   class="paragraph-1">
+        Esto utiliza un primer enfoque móvil con 5 puntos de interrupción.
+    </p>
+
+    <p class="paragraph-1">
+        Solo carga imágenes a medida que coincide
+        cada punto de interrupción.
+    </p>
+
+    <img src="img/e2-grid-system/yacht_race@hires.jpg" srcset="
+      img/e2-grid-system/yacht_race@mobile.jpg 320w,
+      img/e2-grid-system/yacht_race@wide-mobile.jpg 480w,
+      img/e2-grid-system/yacht_race@tablet.jpg 768w,
+      img/e2-grid-system/yacht_race@desktop.jpg 1024w,
+      img/e2-grid-system/yacht_race@hires.jpg 1280w" sizes="90vw" alt="A very exciting yacht race.">
+
+</body>
+
+</html>

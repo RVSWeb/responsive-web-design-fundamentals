@@ -1,31 +1,41 @@
 html, body {
-  width: 100%; }
+    width: 100%;
+}
 
 nav {
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  -webkit-transform: translate(-300px, 0);
-  transition: transform 0.3s ease; }
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    transition: transform 0.3s ease; 
+
+    -webkit-transform: translate(-300px, 0);
+       -moz-transform: translate(-300px,0);
+}
 
 nav.open {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0); }
+            transform: translate(0, 0); 
+
+    -webkit-transform: translate(0, 0);
+}
 
 /*
 * Realiza cambios cuando ventana sea mayor de 600px
 */
 @media screen and (min-width: 600px) {
-  nav {
-    position: relative;
-    transform: translate(0, 0); }
+    nav {
+        position: relative;
+        transform: translate(0, 0);
+    }
 
-  body {
-    display: flex;
-    flex-flow: row nowrap; }
+    body {
+        display: flex;
+        flex-flow: row nowrap;
+    }
 
-  main {
-    width: auto;
-    flex-grow: 1; } }
+    main {
+        flex-grow: 1; 
+        width: auto;
+    }
+}
 
 /*# sourceMappingURL=cx19-pattern-off-canvas.css.map */

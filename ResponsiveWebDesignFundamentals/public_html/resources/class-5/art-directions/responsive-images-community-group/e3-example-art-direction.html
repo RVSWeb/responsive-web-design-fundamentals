@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e3-example-art-direction</title>
+    <link rel="stylesheet" type="text/css" href="css/example-art-direction.css">
+</head>
+
+<body>
+
+    <h1 class="title">
+        Art direction
+    </h1>
+
+    <header>
+        <h2 class="subtitle">
+            Los desarrolladores web a menudo necesitan proporcionar diferentes versiones de la misma imagen para
+            comunicarse
+            de manera efectiva en la amplia gama de resoluciones de pantalla y densidades de píxeles disponibles en los
+            dispositivos actuales.
+        </h2>
+        <h2 class="subtitle">
+            Si la pantalla es pequeña y la imagen se reduce, no se pueden ver sus detalles. El uso de
+            'dirección de arte' ayuda a superar este problema.
+        </h2>
+    </header>
+
+    <main>
+        <picture>
+            <source media="(max-width:25em)" srcset="img/e3-example-art-direction/iphone-320x393.png">
+
+            <source media="(max-width:48em)" srcset="img/e3-example-art-direction/iphone-600x306.png">
+
+            <img src="img/e3-example-art-direction/iphone.png" alt="The iPhone Safari web browser showing the RICG website.">
+        </picture>
+    </main>
+
+</body>
+
+</html>

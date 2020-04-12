@@ -1,0 +1,40 @@
+* {
+  font-family: Roboto , sans-serif; }
+
+body, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #e6e0e0; }
+
+.paragraph-1 {
+  width: 50%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  background: azure; }
+
+.b-1 {
+  padding: 10px;
+  width: max-content;
+  border: 5px solid #ccc;
+  border-radius: 6px; }
+
+.example {
+  height: 400px;
+  background-image: url(../img/ej7-imagenes-css/small-320x211.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center; }
+
+@media screen and (min-width: 500px) {
+  body {
+    background-image: url(../img/ej7-imagenes-css/body-600x394.png); }
+
+  .example {
+    background-image: url(../img/ej7-imagenes-css/large-600x394.png); } }
+
+/*# sourceMappingURL=ej7-imagenes-css.css.map */

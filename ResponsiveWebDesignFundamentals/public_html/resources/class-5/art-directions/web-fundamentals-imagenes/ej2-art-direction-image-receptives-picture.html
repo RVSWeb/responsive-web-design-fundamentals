@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej1-tamaños-relativos</title>
+    <style>
+        img,
+        embed,
+        object,
+        video {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #f00;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <picture>
+        <source media="(max-width: 1024px)" srcset="ej2-art-direction/1024x684.jpg , ej2-art-direction/1024x684.jpg 2x">
+        <source media="(min-width: 800px)" srcset="ej2-art-direction/800x532.jpg , ej2-art-direction/800x532.jpg 2x">
+        <source media="(min-width: 450px)" srcset="ej2-art-direction/320x212.jpg , ej2-art-direction/320x212.jpg 2x">
+        <source media="(max-width: 449px)" srcset="ej2-art-direction/320x212.jpg , ej2-art-direction/320x212.jpg 2x">
+        <img src="ej2-art-direction/22-1024x684.jpg" srcset="" alt="hombre caminando">
+    </picture>
+
+</body>
+
+</html>

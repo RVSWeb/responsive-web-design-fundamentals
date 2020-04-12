@@ -1,0 +1,21 @@
+
+@import "general-style.scss";
+
+.example{
+    height: 400px;
+    background-image: url(../img/ej7-imagenes-css/small-320x211.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+
+@media screen and (min-width: 500px){
+
+    body{
+        background-image: url(../img/ej7-imagenes-css/body-600x394.png);
+    }
+    
+    .example{
+        background-image: url(../img/ej7-imagenes-css/large-600x394.png);
+    }
+}
