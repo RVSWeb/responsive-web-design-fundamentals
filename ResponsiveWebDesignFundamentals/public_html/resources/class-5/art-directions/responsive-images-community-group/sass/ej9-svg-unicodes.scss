@@ -1,0 +1,47 @@
+
+@import "general-style.scss";
+
+
+.style {
+    border: 5px solid rgb(131, 116, 116);
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.style-1 {
+    border: 1px solid #ff0000;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.unicode-1::before {
+    // CSS Code
+    content: "\2605";
+    font-size: 128px;
+}
+
+.unicode-1 {
+    width: min-content;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    padding: 10px;
+}
+
+.unicode-2, .unicode-2-b {
+    width: max-content;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    font-family: 2em;
+}
+
+.unicode-3 {
+    width: auto;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 120px;
+}

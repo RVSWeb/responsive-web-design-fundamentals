@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e1-simple-cropping</title>
+    <link rel="stylesheet" type="text/css" href="css/e1-simple-cropping.css">
+</head>
+
+<body>
+
+    <h1 class="title">
+        Simple Cropping
+    </h1>
+
+    <p class="paragraph-1">
+        Gire / cambie el tamaño de la ventana para cambiar la imagen.
+    </p>
+
+    <p class="paragraph-1">
+        Las imágenes grandes generan un tiempo de
+        procesamiento y descarga innecesario, lo que ralentiza la experiencia de los usuarios.
+    </p>
+
+    <p class="paragraph-1">
+        Para resolver este problema, el elemento de imagen le permite proporcionar múltiples fuentes de la misma imagen
+        a diferentes
+        resoluciones para que el navegador pueda elegir la imagen del tamaño correcto en función del tamaño de la
+        ventana gráfica
+    </p>
+
+    <picture>
+
+        <source class="s1" media="print" srcset="img/e1-simple-cropping/test_landscape_1@4x960x640.jpg">
+
+        <source class="s2" media="(max-width: 481px)" srcset="img/e1-simple-cropping/test_landscape_1@1x240x160.jpg">
+
+        <source class="s3" media="(max-width: 640px)" srcset="img/e1-simple-cropping/test_landscape_1@2x480x360.jpg">
+
+        <source class="s4" media="(max-width: 1024px)" srcset="img/e1-simple-cropping/test_landscape_1@4x960x640.jpg">
+
+        <img class="s5" src="img/e1-simple-cropping/test_landscape_1@1023x682.jpg"
+            alt="Nymphenburg Castle in Munich during sunset">
+
+    </picture>
+
+</body>
+
+</html>

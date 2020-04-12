@@ -1,19 +1,21 @@
 
-html,body{
+html, body {
     width: 100%;
 }
 
-nav{
+nav {
+    position: absolute;
     width: 300px;
     height: 100%;
-    position: absolute;
-    // -webkit-transform: translate(-300px,0);
+// -webkit-transform: translate(-300px,0);
+    transform: translate(-300px , 0);
     transition: transform 0.3s ease;
 }
 
 nav.open {
+            transform: translate(0, 0);
+
     -webkit-transform: translate(0,0);
-    transform: translate(0, 0);
 }
 
 // .dark_blue {
@@ -31,11 +33,11 @@ nav.open {
 /*
 * Realiza cambios cuando ventana sea mayor de 600px
 */
-@media screen and (min-width: 600px){
-
-    nav{
+@media screen and (min-width: 600px) {
+    nav {
         position: relative;
-        // elimina la transición de elementos
+
+// elimina la transición de elementos
         transform: translate(0 , 0);
     }
 
@@ -44,15 +46,15 @@ nav.open {
         flex-flow: row nowrap;
     }
 
-    main{
-        width: auto;
-        // ocupa todo el ancho de la ventana del navegador
+    main {
+// ocupa todo el ancho de la ventana del navegador
         flex-grow: 1;
+        width: auto;
     }
-        main {
-            font-family: Arial, Helvetica, sans-serif;
-        }
 
+    main {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 }
 
 

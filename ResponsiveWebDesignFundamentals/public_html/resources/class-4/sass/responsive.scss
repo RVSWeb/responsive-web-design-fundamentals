@@ -1,0 +1,163 @@
+
+$q: 5px dashed #ff0000;
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__menu {
+    display: none;
+}
+
+.hero, .top-news, .scores, .weather, .recent-news {
+    order: 10;
+}
+
+// 
+// 
+// 
+@media screen and (max-width: 549px) {
+
+    .header__logo {
+        height: 48px;
+        margin-right: 0.5em;
+    }
+
+    .header__title {
+        margin-left: 0;
+        font-size: 2em;
+        vertical-align: bottom;
+    }
+
+    .nav {
+        position: absolute;
+        z-index: 10;
+        width: 300px;
+        background-color: #ffffff;
+                transform: translate(-300px , 0);
+                transition: transform 0.3s ease;
+// The trasform moves the drawer off canvas
+        -webkit-transform: translate(-300px, 0);
+           -moz-transform: translate(-300px, 0);
+// Optionally,we animate the drawer
+        -webkit-transition: transform(-300px, 0);
+           -moz-transition: transform 0.3s ease;
+    }
+
+    .nav.open {
+                transform: translate(0,0);
+        -webkit-transform: translate(0 , 0);
+    }
+
+    .nav__item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .header__menu{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        padding: 1em;
+        // border: $q;
+    }
+
+    .header__menu svg{
+        width: 32px;
+        fill: #E0E0E0;
+    }
+}
+
+// 
+// 
+// 
+@media screen and (min-width: 550px){
+
+    // Imagen de la mujer asiatica
+    .hero{
+        order: 0;
+        width: 60%;
+    }
+    
+    // Bloque con las fotos del tiempo y temperaturas
+    .weather{
+        order: 1;
+        width: 40%;
+    }
+}
+
+// 
+// 
+// 
+@media screen and (min-width: 700px){
+    
+    // Elemento : bloque imagen de la mujer asiatica
+    .hero {
+        width: 50%;
+    }
+    
+    //  Elemento : bloque de noticias
+    .top-news{
+        order: 1;
+        width: 50%;
+    }
+    
+    //  Elemento : Bloque del marcador deportivo
+    .scores{
+        order: 2;
+        width: 60%;
+    }
+    
+    //  Elemento : Bloque del tiempo
+    .weather{
+        order: 3;
+        width: 40%;
+    }
+}
+
+// 
+// 
+// 
+@media screen and (min-width: 700px){
+
+    // Bloque imagen de la asiatica
+    .hero{
+        width: 50%;
+    }
+    
+    // Bloque de noticias
+    .top-news{
+        order: 1;
+        width: 50%;
+    }
+    
+    // Bloque de las puntuaciones
+    .scores{
+        order: 2;
+        width: 60%;
+    }
+    
+    // Bloque de las temperaturas
+    .weather{
+        order: 3;
+        width: 40%;
+    }
+}
+
+// 
+// 
+// 
+@media screen and (min-width: 850px){
+
+    main, 
+    .header__inner , 
+    .nav , 
+    .content{
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

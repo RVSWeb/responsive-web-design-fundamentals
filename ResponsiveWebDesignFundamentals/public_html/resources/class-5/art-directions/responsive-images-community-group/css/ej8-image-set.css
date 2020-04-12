@@ -1,0 +1,99 @@
+* {
+  font-family: Roboto , sans-serif; }
+
+body, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #e6e0e0; }
+
+.paragraph-1 {
+  width: 50%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  background: azure; }
+
+.b-1 {
+  padding: 10px;
+  width: max-content;
+  border: 5px solid #ccc;
+  border-radius: 6px; }
+
+/**
+* 
+*/
+.example {
+  width: auto;
+  height: 400px;
+  background-image: url(../img/ej7-imagenes-css/small-320x211.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain; }
+
+.title {
+  width: max-content;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ff0000; }
+
+.iconos {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #cccccc;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain; }
+
+.icono-1 {
+  position: relative;
+  top: 160px;
+  left: 30px;
+  padding: 10px;
+  background-image: url("../img/ej8-image-set/error.png");
+  background-image: image-set("../img/ej8-image-set/corazon.png" 1x, "../img/ej8-image-set/corazon.svg" 2x); }
+
+.icono-2 {
+  position: relative;
+  top: 80px;
+  left: 160px;
+  padding: 10px;
+  background-image: url("../img/ej8-image-set/aceptar.png");
+  background-image: image-set(url("../img/ej8-image-set/error.png") 1x, url("../img/ej8-image-set/error.svg") 2x); }
+
+.sample {
+  position: relative;
+  top: 0px;
+  left: 290px;
+  width: 128px;
+  height: 128px;
+  background-image: url("../img/ej8-image-set/estrella.png");
+  background-image: -webkit-image-set(url("../img/ej8-image-set/estrella.png") 1x, url("../img/ej8-image-set/estrella.svg") 2x); }
+
+@media (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
+  /* Safari % Android Browser */
+  .sample {
+    background-size: contain;
+    background-image: url(../img/ej8-image-set/estrella.png); } }
+/**
+* Cambiar las imagenes  
+*/
+@media screen and (min-width: 500px) {
+  body {
+    background-image: url(../img/ej7-imagenes-css/body-600x394.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain; }
+
+  .example {
+    background-image: url(../img/ej7-imagenes-css/large-600x394.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain; } }
+
+/*# sourceMappingURL=ej8-image-set.css.map */

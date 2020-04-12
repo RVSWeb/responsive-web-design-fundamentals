@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,UAAY;EACR,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;EACtB,gBAAgB,EAAE,KAAK",
+"sources": ["../sass/general-style.scss"],
+"names": [],
+"file": "grid-system.css"
+}
