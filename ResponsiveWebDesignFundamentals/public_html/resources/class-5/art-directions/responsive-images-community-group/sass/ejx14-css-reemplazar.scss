@@ -1,0 +1,9 @@
+
+@import "general-style.scss";
+
+div#noImage{
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px 0 rgba(9,130,154,0.2);
+    background: linear-gradient(rgba(9,130,154,1), rgba(9,130,154,0.5));
+}

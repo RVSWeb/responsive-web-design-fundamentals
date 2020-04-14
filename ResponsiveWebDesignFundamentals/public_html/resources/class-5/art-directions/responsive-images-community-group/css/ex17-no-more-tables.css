@@ -1,0 +1,54 @@
+* {
+  font-family: Roboto , sans-serif; }
+
+body, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #e6e0e0; }
+
+.paragraph-1 {
+  width: 50%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  background: azure; }
+
+.b-1 {
+  padding: 10px;
+  width: max-content;
+  border: 5px solid #ccc;
+  border-radius: 6px; }
+
+table {
+  border: 1px solid #ddd; }
+
+tr:nth-child(odd) {
+  background-color: #f9f9f9; }
+
+@media screen and (max-width: 500px) {
+  table, thead, tbody, th, td, tr {
+    display: block; }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+
+  td {
+    position: relative;
+    padding-left: 50%; }
+
+  td:before {
+    position: absolute;
+    left: 6px;
+    content: attr(data-th);
+    font-weight: bold; }
+
+  td:first-of-type {
+    font-weight: bold; } }
+
+/*# sourceMappingURL=ex17-no-more-tables.css.map */

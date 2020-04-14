@@ -1,0 +1,29 @@
+
+@import "general-style.scss";
+
+body {
+    margin: 1em;
+}
+
+table {
+    font-family: Roboto, sans-serif;
+}
+
+.shortName {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+        
+    .shortName {
+        display: inline;
+    }
+
+    .longName {
+        display: none;
+    }
+
+    .inning {
+        display: none;
+    }
+}
