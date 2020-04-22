@@ -1,0 +1,116 @@
+
+
+/*  */
+body {
+    font-size: 16px;
+    line-height: 1.2em;
+}
+
+.snippet__thumbnail > img {
+    width: 100%;
+}
+
+/* Para cada elemento de la lista 
+establecemos distribucion flex */
+.snippet {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Titulo de la Caja con los articulos centrales  */
+.snippet__title {
+    order: 0;
+    /* Ocupa todo el ancho del elemento Padre que lo envuelve */
+    width: 100%;
+    margin: 0 0 0.5em;
+}
+
+/* Recuadro para envolver la imagen izq */
+.snippet__thumbnail {
+    order: 1;
+    width: 30%;
+}
+
+/* Recuadro lateral derecho que acompaña al texto */
+.snippet__description {
+    display: -webkit-box;
+    display:    -moz-box;
+    overflow: hidden;
+    order: 2;
+    width: 70%;
+    margin: 0;
+    padding: 0 0 0 1em;
+
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+/* Ventana menor a 450px */
+@media screen and (max-width: 450px) {
+    /* Imagen de la mujer que los articulos que desaparece */
+    .snippet__thumbnail {
+        display: none;
+    }
+
+    /* Texto que acompaña a la imagen de la mujer */
+    .snippet__description {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .scores__table
+    .scores__location {
+        display: none;
+    }
+}
+
+/* Ventana navegador por debajo de 649px */
+@media screen and (max-width: 649px) {
+    /* Titulo de la parte inferior de las noticias */
+    .snippet__title {
+    }
+
+    /* Imagen izquierda de los articulos */
+    .snippet__thumbnail {
+        width: 30%;
+        margin: 0;
+    }
+
+    /* Texto derecho de los articulos */
+    .snippet__description {
+        max-height: 3.7em;
+
+        -webkit-line-clamp: 3;
+    }
+}
+
+/* Ventana navegador por encima de 650px */
+@media screen and (min-width: 650px) {
+    /* Titulo de la parte inferior de las noticias */
+    .snippet__title {
+    }
+
+    /* Imagen izquierda de los articulos */
+    .snippet__thumbnail {
+        width: 30%;
+        height: 150px;
+        margin-right: 0;
+    }
+
+    /* Texto derecho de los articulos */
+    .snippet__description {
+        max-height: 4.9em;
+
+        -webkit-line-clamp: 4;;
+    }
+}
+
+/* Ventana navegador por encima de 700px */
+@media screen and (min-width: 700px) {
+  /* Texto de la tabla marcadores */
+    .scores__table {
+        font-size: 12px;
+    }
+}

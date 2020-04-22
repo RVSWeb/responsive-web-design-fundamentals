@@ -1,0 +1,435 @@
+
+
+/*
+ * Diseño general de la pagina 
+ */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    /* usa el 100% del espacio del elemento padre*/
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #424242;
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+header, nav, footer, section, article, div {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*
+ * Estilo Comun para los enlaces +more
+ * 
+ */
+
+.news__more {
+    float: right;
+    color: #333333;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+/*
+ * Header
+ */
+
+.header {
+    min-height: 56px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    transition: min-height 0.3s;
+}
+
+/* Parte interna del elemento header principal */
+.header__inner {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Icono basico */
+.header__logo {
+    height: 72px;
+    margin-top: 12px;
+    margin-right: 1em;
+    vertical-align: top;
+}
+
+/* Texto del elemento header */
+.header__title {
+    display: inline-block;
+    margin: 0.75em 0.25em;
+    color: #212121;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+
+.nav {
+    /* Abarca todo el ancho del espacio restante del elemento padre */
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Elemento de la lista */
+.nav__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cada elemento separado del menu de nav */
+.nav__item {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 24%;
+    padding: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Cada elemento individual separado del menu de nav */
+.nav a {
+    padding: 1.5em;
+    color: #616161;
+    text-decoration: none;
+}
+
+/* Cada elemento individual 
+* separado del menu de nav
+* cuando se pasa por encima
+*/
+.nav a:hover {
+    color: #212121;
+    text-decoration: underline;
+}
+
+/*
+ *
+ * Main
+ *
+ */
+
+main {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+/*
+ *
+ * Seccion : Content Main
+ *
+ */
+
+/*
+ *
+ * Hero : Imagen principal de la pagina
+ *
+ */
+
+.hero {
+    /* Posicionan con respecto al elemento padre 'content'
+   pero manteniendo su espacio libre ocupado */
+    position: relative;
+    /* 
+  La imagen coge todo el ancho y alto
+  del espacio del elemento padre 'content' 
+   */
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    background-image: url("./images/dog.jpg");
+    background-size: cover;
+}
+
+/* Texto interior de la imagen */
+.hero article {
+    /* Posicionan con respecto al elemento padre '.hero' 
+  no mantiene el espacio libre dejado */
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+    color: #ffffff;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*
+ * Top News - Box elementos derecha
+ */
+
+.top-news {
+    width: 100%;
+    padding: 1em;
+    /* Margen inferior */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Titulos de las secciones de Top news y Latest news  */
+.news__title {
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+/* Texto de cada enlace dentro de la seccion */
+.top-news__item {
+    padding: 1em 0;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 19.2px;
+}
+
+/* Simbolo para apuntar */
+.top-news__item:before {
+    content: "» ";
+}
+
+/* Ultimo enlace */
+.top-news__item:last-child {
+    border-bottom: none;
+}
+
+/* texto dentro de los enlaces */
+.top-news__item a {
+    padding: 1.5em inherit;
+    color: #666666;
+    text-decoration: none;
+}
+
+/* activacion cuando se pasa por encima el puntero */
+.top-news__item a:hover, .top-news__item a:active {
+    text-decoration: underline;
+}
+
+/*
+ *
+ * Sport Scores - Tabla de resultados
+ *
+ */
+
+/* Recuadro exterior de los elementos */
+.scores {
+    flex-grow: 1;
+    padding-top: 1em;
+}
+
+/* Recuadro interior de los elementos */
+.scores__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Espacio interior de la tabla */
+.scores__table th, .scores__table td {
+    padding: 1em;
+}
+
+/* Datos de la cabecera  */
+.scores__table th {
+    color: #ffffff;
+    background-color: #78909c;
+    font-weight: 300;
+}
+
+/* Dato individual de la cabecera en 3 posicion   */
+.scores__table tr:nth-child(1) th:nth-child(3) {
+    text-align: right;
+}
+
+/* Dato individual de la cabecera en 5 posicion   */
+.scores__table tr:nth-child(1) th:nth-child(5) {
+    text-align: left;
+}
+
+/* Fila pares de la tabla   */
+.scores__table tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+
+/* Fila impares de la tabla   */
+.scores__table tr:nth-child(even) td {
+    background-color: #eceff1;
+}
+
+/* Datos especificos de la tabla */
+.scores__table td.winner {
+    font-weight: bold;
+}
+
+/* Datos de la columna 3 */
+.scores__table td:nth-child(3) {
+    text-align: right;
+}
+
+/* Datos de las columnas 1 y 2 */
+.scores__table td:nth-child(1), .scores__table td:nth-child(2) {
+    text-align: center;
+}
+
+/*
+ *
+ * Weather
+ *
+ */
+
+/* Contenedor derecho imagenes de temperatura y temperaturas */
+.weather {
+    flex-grow: 1;
+    padding: 1em;
+}
+
+/* Titulo principal del contenedor  */
+.weather__location {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+/* Estilo sin determinar */
+.weather__ {
+  display: block;
+  font-size: 1.2em;
+}
+
+/* Elemento 'span' - Icono central del sol y temperatura */
+.weather__today {
+    width: 60%;
+    vertical-align: middle;
+  }
+  
+  /* Elemento img - Sol */
+  .weather__today__image {
+    vertical-align: middle;
+  }
+  
+  /* Elemento span - numero temperatura */
+  .weather__today__temp {
+    font-size: 3em;
+  }
+  
+  /* Elemento span - temperatura */
+  .weather__today__deg {
+    display: inline;
+    font-size: 2em;
+}
+
+/* Elementos de la lista alineados 1 a continuacion de otro */
+.weather__next__item {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+
+/* Lista de dias alineados 1 a continuacion de otro */
+.weather__next__item span {
+  display: block;
+}
+
+/* Lista de iconos alineados 1 a continuacion de otro */
+.weather__next__image {
+    width: 100%;
+}
+
+/*
+ *
+ * Recent News
+ *
+ */
+
+
+ /* Seccion - Caja diseño exterior : Latest news */
+ .recent-news {
+   clear: both;
+   flex-grow: 1;
+   padding: 1em;
+  }
+  
+  /* Seccion - Caja diseño interior */
+.snippet {
+    clear: both;
+    margin: 24px 0;
+}
+
+/* Seccion - Contenedor de la imagen izq. de la seccion noticias   */
+.snippet__thumbnail {
+    float: left;
+    width: 100px;
+    margin-right: 1em;
+}
+
+/* Texto interior dentro de la seccion de noticias */
+.snippet__description{
+    font-weight: 100;
+}
+
+/* Titulo superior del enlace */
+.snippet__title {
+    font-weight: 500;
+}
+
+/* Enlace dentro del titulo */
+.snippet__title a {
+    padding: 1.5em inherit;
+    color: #666666;
+    text-decoration: none;
+}
+
+/* Estilo de enlace dentro del titulo que se activa al pasar por encima  */
+.snippet__title a:hover, .snippet__title a:active {
+    text-decoration: underline;
+}
+
+/*
+ *
+ * Footer
+ *
+ */
+
+ /* Contenedor completo inferior */
+footer {
+    width: 100%;
+    padding: 1em;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Alinear elementos */
+footer li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+/* Estilo para los elementos */
+footer a {
+    padding: 1.5em;
+    color: #333333;
+    text-decoration: none;
+}
