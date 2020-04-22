@@ -1,0 +1,131 @@
+
+/* Contenedor principal */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Menu oculto */
+.header__menu {
+    display: none;
+}
+
+/* Cada seccion elementos */
+.hero, .top-news, .scores, .weather, .recent-news {
+    order: 10;
+}
+
+/* Elementos menores a 610px  */
+@media screen and (max-width: 610px) {
+    /* Logo de la pagina */
+    .header__logo {
+        height: 48px;
+        margin-right: 0.5em;
+    }
+
+    /* Titulo superior pagina */
+    .header__title {
+        margin-left: 0;
+        font-size: 2em;
+        vertical-align: bottom;
+    }
+
+    /* Caja lateral izq donde aparece el menu de enlaces */
+    .nav {
+        position: absolute;
+        z-index: 10;
+        width: 300px;
+        background-color: #ffffff;
+                transform: translate(-300px, 0);
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+        /* This trasform moves the drawer off canvas. */
+
+        -webkit-transform: translate(-300px, 0);
+    }
+
+    /* Caja lateral izq donde aparece el menu de enlaces */
+    /*  js utiliza .open para abrir la ventana desde el lateral izq. */
+    .nav.open {
+        transform: translate(0px,0px);
+        -webkit-transform: translate(0px,0px);
+        -ms-transform: translate(0px,0px);
+    }
+
+    /* Lista de elementos alineados  */
+    .nav__item {
+        /* display: list-item; */
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #e0e0e0;
+        text-align: left;
+    }
+
+    /* Icono hamburguesa esquina superior derecha */
+    .header__menu {
+        position: absolute;
+        right: 0;
+        display: inline-block;
+        padding: 1em;
+    }
+
+    /* Icono hamburguesa parte interna */
+    .header__menu svg {
+        width: 32px;
+
+        fill: #e0e0e0;
+        /* border: 1px solid #f00; */
+    }
+}
+
+/* Tamaño de la pantalla superior a 611px */
+@media screen and (min-width: 611px) {
+    /* Imagen principal */
+    .hero {
+        /* 1º posicion alineacion a la izq. */
+        order: 1;
+        width: 60%;
+    }
+
+    .weather {
+        /* 2º posicion alineacion a la der. */
+        order: 1;
+        width: 40%;
+    }
+}
+
+/* Tamaño de la pantalla superior a 700px */
+@media screen and (min-width: 700px) {
+    /* Imagen principal */
+    .hero {
+        width: 50%;
+    }
+
+    /* Caja de menu derecho con distintos enlace  */
+    .top-news {
+        order: 1;
+        width: 50%;
+    }
+
+    /* Caja con la tabla de resultado deportivos  */
+    .scores {
+        order: 2;
+        width: 60%;
+    }
+
+    /* Caja los iconos del tiempo y temperaturas */
+    .weather {
+        order: 3;
+    }
+}
+
+/* Tamaño del visor superior a 850px */
+@media screen and (min-width: 850px) {
+
+  /* Ajusta el ancho a las distintas secciones y las centra */
+    main, .header__inner, .nav, .content {
+        width: 850px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
